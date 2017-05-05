@@ -7,13 +7,25 @@ var pingPong = function(inputtedPhrase) {
 $(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-var userInput = $("input#phrase").val();
+var userInput = $("#input").val();
 
-    var result = pingPong(userInput);
-
+    var result = (userInput/3);
+    // var num1 = $("input[label='a']").val(),
+    //     num2 = $("input[label='b']").val(),
+    //     result = parseInt(num1, 10) / parseInt(num2, 10);
     $("#result").text(result);
-  });
+
 });
+});
+
+
+
+
+
+
+
+
+
 // $(document).ready(function() {
 //   $("form#form-group").submit(function(event) {
 //     var number1 = parseInt($("input#numberone").val());
