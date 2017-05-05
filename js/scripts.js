@@ -9,7 +9,7 @@ $(function() {
     event.preventDefault();
 var userInput = $("#input").val();
 // var result = (userInput/3);
-if (userInput /= 3) {
+if (userInput/=3) {
     result = "Ping";
 } else if (userInput /= 5) {
     result = "Pong";
