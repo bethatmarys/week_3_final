@@ -8,16 +8,31 @@ $(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
 var userInput = $("#input").val();
+// var result = (userInput/3);
+if (userInput /= 3) {
+    result = "Ping";
+} else if (userInput /= 5) {
+    result = "Pong";
+} else if (userInput /= 15) {
+    result = "Ping Pong";
+} else {
+    result = "userInput";
+}
+$("#result").text(result);
+    //
+    // // } else if (time < 20) {
+    //     greeting = "Good day";
+    // } else {
+    //     greeting = "Good evening";
 
-    var result = (userInput/3);
-    // var num1 = $("input[label='a']").val(),
-    //     num2 = $("input[label='b']").val(),
-    //     result = parseInt(num1, 10) / parseInt(num2, 10);
-    $("#result").text(result);
+
+
+
 
 });
 });
-
+// var result = (userInput/5);
+// var result = (userInput/15);
 
 
 
