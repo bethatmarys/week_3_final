@@ -1,13 +1,9 @@
-
-
-
-
 h1  {
   font-size: 20px;
   font-weight: bold;
 }
 body {
-  background-color: yellow;
+  background-color: grey;
 }
 .action {
   margin: 20px;
@@ -19,4 +15,9 @@ body {
 .phrase {
   font-size: 30px;
   font-weight: bold;
+}
+.jumbotron{
+  text-align: center;
+  margin-top: 105px;
+
 }
