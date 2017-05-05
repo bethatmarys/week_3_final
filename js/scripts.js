@@ -1,5 +1,5 @@
 //Business Logic
-var pigLatin = function(inputtedPhrase) {
+var pingPong = function(inputtedPhrase) {
   return inputtedPhrase;
 };
 
@@ -9,114 +9,37 @@ $(function() {
     event.preventDefault();
 var userInput = $("input#phrase").val();
 
-    var result = pigLatin(userInput);
+    var result = pingPong(userInput);
 
     $("#result").text(result);
   });
 });
-
-// var return = function(phrase) {
-//   if ((number  4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
-//     return true;
-//   } else {
-//     return false;
-
-
-
-//User Interface Logic
-$(document).ready(function() {
-  $("form#formOne").submit(function(event) {
-    //call a leap-year function pass the year as an argument
-    event.preventDefault();
-    //this will stop the function at the end of the run
-    var year = parseInt($("input#phrase").val());
-    //this tells the computer that the user input is a number "parseInt"
-    // var result = return(year);
-    //call the leap year function and pass the year as a parameter
-
-    // $(".phrase").text(year);
-
-    // for (#phrase=1; #phrase<1; #phrase++) {
-
-    if("phrase"/3 === "Ping" ) {
-    }
-    else if ("phrase"/5 === "Pong") {
-    }
-    else if ("phrase"/15 === "Ping Pong") {
-    }
-    else {
-      //  console.log(i);
-    // }
-}
-    // };
-
-    //the result of a true or false
-
-    $("#result").show();
-  });
-});
-
-
-
-
-
-
-
-// userInput = userInput.split("").join("");
-// //Adds way to vowels
-// for (var index = 0; index < userInput.length; index +=1) {
-//   if (userInput[0] === vowels[index]) {
-//     userInput += "way";
-//   }
-// }
-// Adds ay to consonan
-
-
-// var remove = userInput.replace(/ /g, '').replace(/[.,\/#!$%@?'|"+\^&\*;:{}=\-_`~()]0-9/g,"");
-
-
-// var reversed = remove.split("").reverse().join("");
-
-
-
-
-
-
-
-// userInput = userInput.split("").join("");
-// //Adds way to vowels
-// for (var index = 0; index < userInput.length; index +=1) {
-//   if (userInput[0] === vowels[index]) {
-//     userInput += "way";
-//   }
-// }
-// Adds ay to consonan
-
-
-// var remove = userInput.replace(/ /g, '').replace(/[.,\/#!$%@?'|"+\^&\*;:{}=\-_`~()]0-9/g,"");
-
-
-// var reversed = remove.split("").reverse().join("");
-
-
-
-
-// // //Business Logic
+// $(document).ready(function() {
+//   $("form#form-group").submit(function(event) {
+//     var number1 = parseInt($("input#numberone").val());
+//     var number2 = parseInt($("input#numbertwo").val());
+// // debugger;
+//     if (!(number1)){
+//       alert("Please enter a number");
+//     }
+//     else if ((number1 < 0) || (number2 < 0)) {
+//       alert ("Please enter a postive number");
+//     }
+//     else if ((number1 = "") || (number2 = "")) {
+//       alert ("Please enter a ? number");
+//     }
 //
-// var pingPong = function(inputtedPhrase) {
-//   return inputtedPhrase;
-// };
+//     var outputs = [];
 //
-// $(function() {
-//   $("form#formOne").submit(function(event) {
+//     var total = 0;
+//     for (var currentNumber = 0; currentNumber <= number1; currentNumber += number2) {
+//       total += number2 ;
+//       outputs.push(total);
+//     }
+//      $("p").append("your output of : " + " " + output + ".");
+//
+//
+//
 //     event.preventDefault();
-// var userInput = $("input#phrase").val();
-//
-//   var result = pingPong(userInput);
-//
-//     $("#result").text(result);
 //   });
-// });
-// var pigLatin = function(inputtedPhrase) {
-//   return inputtedPhrase;
-// };
+//   });
