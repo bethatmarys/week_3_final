@@ -1,23 +1,30 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/master.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.2.1js"></script>
-    <script>src="js/scripts.js"</script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Ping Pong</title>
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+
+
       <form id="formOne">
-        <div class="entry">
-          <label for="phrase">Enter a number</label>
-          <input type="text" id="phrase">
+        
+        <h1>Ping Pong!</h1>
+        <div class="form-group">
+          <label for="phrase">Enter a number:</label>
+          <input type="text" id="phrase"><br>
         </div>
-          <button type="submit" name="button">Submit</button>
+        <button type="submit" name="button">Submit</button>
       </form>
-
+      <div id="result">
+      </div>
+      </div>
     </div>
-
   </body>
 </html>
