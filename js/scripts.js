@@ -21,7 +21,7 @@ var pingPong = function(number) {
 $(document).ready(function() {
   $("form#formOne").submit (function(event) {
     event.preventDefault();
-    var pingPong = parseInt($("input#number").val());
+    var pingPong = parseInt($("#number").val());
     var result = pingPong();
     result.forEach(function() {
       $("#result").append("<li>" + listItem + "</li>");
