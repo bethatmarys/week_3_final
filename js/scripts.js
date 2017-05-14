@@ -1,72 +1,25 @@
 //Business Logic
-var pingPong = function(inputtedPhrase) {
-  return inputtedPhrase;
+var output = function(output) {
+// var result "userInput";
+for (index=1; index<=0; index++) {
+if (userInput % 15 === 0) {
+    makeArray.push("Ping Pong");
+} else if (userInput % 5 === 0) {
+    makeArray.push("Pong");
+} else if (userInput % 3 === 0) {
+    makeArray.push("Ping");
+} else {
+    makeArray.push(userInput);
+}
 };
-
-
+return makeArray;
+};
 $(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-var userInput = $("#input").val();
-// var result = (userInput/3);
-if (userInput/=3) {
-    result = "Ping";
-} else if (userInput /= 5) {
-    result = "Pong";
-} else if (userInput /= 15) {
-    result = "Ping Pong";
-} else {
-    result = "userInput";
-}
-$("#result").text(result);
-    //
-    // // } else if (time < 20) {
-    //     greeting = "Good day";
-    // } else {
-    //     greeting = "Good evening";
-
-
-
-
-
+var userInput = ($("input#userInput").val());
+var result = output(userInput);
+result (bleep)
+$("result").append("<li>" + bleep + "</li>");
 });
 });
-// var result = (userInput/5);
-// var result = (userInput/15);
-
-
-
-
-
-
-
-
-// $(document).ready(function() {
-//   $("form#form-group").submit(function(event) {
-//     var number1 = parseInt($("input#numberone").val());
-//     var number2 = parseInt($("input#numbertwo").val());
-// // debugger;
-//     if (!(number1)){
-//       alert("Please enter a number");
-//     }
-//     else if ((number1 < 0) || (number2 < 0)) {
-//       alert ("Please enter a postive number");
-//     }
-//     else if ((number1 = "") || (number2 = "")) {
-//       alert ("Please enter a ? number");
-//     }
-//
-//     var outputs = [];
-//
-//     var total = 0;
-//     for (var currentNumber = 0; currentNumber <= number1; currentNumber += number2) {
-//       total += number2 ;
-//       outputs.push(total);
-//     }
-//      $("p").append("your output of : " + " " + output + ".");
-//
-//
-//
-//     event.preventDefault();
-//   });
-//   });
